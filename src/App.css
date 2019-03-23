@@ -31,3 +31,7 @@
 .icon-width {
     min-width: 5.5rem;
 }
+
+.selected-account {
+    background-color: rgba(16, 39, 123, 0.171)!important;
+}

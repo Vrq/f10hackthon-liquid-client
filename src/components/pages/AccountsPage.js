@@ -33,7 +33,7 @@ const AccountPage = (props) => {
           <div className="admin-up">
             <MDBIcon icon="money-bill-alt" className="businesshq-bg" />
             <div className="data">
-              <p>UBS</p>
+              <p>TOTAL BALANCE</p>
               <h4>
                 <strong>{props.globalState.balances.reduce((prev, curr) => prev + curr) + " CHF"} </strong>
               </h4>
@@ -52,7 +52,7 @@ const AccountPage = (props) => {
       <MDBRow>
       <MDBCol className="col-6">
       <MDBCard className="mt-4">
-      <MDBCardHeader>Doughnut chart</MDBCardHeader>
+      <MDBCardHeader className="text-center">ACCOUNTS SHARE</MDBCardHeader>
       <MDBCardBody >
           <Doughnut data={dataDoughnut}  height={180} options={{responsive: true }} />
       </MDBCardBody>

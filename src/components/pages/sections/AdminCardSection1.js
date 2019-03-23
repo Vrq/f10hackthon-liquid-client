@@ -5,7 +5,7 @@ const AdminCardSection1 = (props) => {
   return (
     <div>
       {props.globalState.balances[0] !== 0 &&
-                <MDBAnimation type="slideInUp slow">
+                <MDBAnimation type="slideInUp">
 
         <MDBRow className="mb-4">
             <MDBCol xl="4" md="6" className="mb-r">

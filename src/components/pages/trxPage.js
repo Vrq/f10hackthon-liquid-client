@@ -86,7 +86,6 @@ class TrxPage extends Component {
         <MDBRow>
           <MDBCol md="12">
             <TransactionsChart />
-            <MDBBtn color="info" onClick={this.toggle}>Add Account</MDBBtn>
             <TrxTable />
           </MDBCol>
           {/* <MDBCol md="3">
