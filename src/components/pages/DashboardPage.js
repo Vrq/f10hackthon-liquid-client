@@ -21,7 +21,7 @@ const DashboardPage = (props) => {
           <ChartSection2 /> */}
         </MDBCol>
         <MDBCol className="col-3">
-      <InsightsSection/>
+      <InsightsSection  changeGlobalState={props.changeGlobalState}/>
         </MDBCol>
       </MDBRow>
 

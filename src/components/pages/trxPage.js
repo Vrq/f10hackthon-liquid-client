@@ -7,10 +7,11 @@ import PF_logo from '../../assets/PF_logo.png'
 import RV_logo from '../../assets/Logo_Revolut.png'
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 import InsightsSection from './sections/InsightsSection'
+import AddAccountModal from './sections/AddAccountModal';
 
 
-const TrxTable =()=>{
-  return(
+const TrxTable = () => {
+  return (
     <MDBCard className="mt-5">
       <MDBView className="gradient-card-header blue darken-2">
         <h4 className="h4-responsive text-white">Transactions</h4>
@@ -72,45 +73,27 @@ class TrxPage extends Component {
       modal: !this.state.modal
     });
   }
+
+  closeModal = () => {
+    this.setState({
+      modal: false
+    });
+  }
+
   render() {
     return (
       <div>
-      <MDBRow>
-      <MDBCol md="9">
-        <TransactionsChart />
-        <MDBBtn color="info" onClick={this.toggle}>Add Account</MDBBtn>
-        <TrxTable/>
-      </MDBCol>
-      <MDBCol md="3">
-        <InsightsSection/>
-      </MDBCol>
-      </MDBRow>
-
-        <MDBModal isOpen={this.state.modal} toggle={this.toggle}    >
-          <MDBModalHeader toggle={this.toggle}>Add bank accounts </MDBModalHeader>
-          <MDBModalBody>
-          Choose any of the banks below to add them to your overview
-            <MDBRow>
-              <MDBCol md="12">
-                <MDBBtn color="white"><img height={25} src={CS_logo}/></MDBBtn>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                  <MDBBtn color="white"><img height={30} src={RV_logo}/></MDBBtn>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                <MDBBtn color="white"><img height={30} src={PF_logo}/></MDBBtn>
-              </MDBCol>
-            </MDBRow>
-          </MDBModalBody>
-          <MDBModalFooter>
-            <MDBBtn color="secondary" onClick={this.toggle}>Close</MDBBtn>
-            <MDBBtn color="primary" onClick={this.toggle}>Add account</MDBBtn>
-          </MDBModalFooter>
-        </MDBModal>
+        <MDBRow>
+          <MDBCol md="9">
+            <TransactionsChart />
+            <MDBBtn color="info" onClick={this.toggle}>Add Account</MDBBtn>
+            <TrxTable />
+          </MDBCol>
+          <MDBCol md="3">
+            <InsightsSection changeGlobalState={this.props.changeGlobalState} />
+          </MDBCol>
+        </MDBRow>
+        <AddAccountModal changeGlobalState={this.props.changeGlobalState} modalState={this.state.modal} closeModal={this.closeModal} />
       </div>
     );
   }
