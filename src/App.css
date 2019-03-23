@@ -1,5 +1,10 @@
 .businesshq-bg { 
+ background-color: #10277b;
  background-color: rgba(16, 39, 123, 0.918);
+}
+
+.businesshq-bg-complementary {
+    background-color: #bd6b1ee0;
 }
 
 .activeClass > .list-group-item {

@@ -16,9 +16,9 @@ const DashboardPage = (props) => {
       <MDBRow>
         <MDBCol className="col-9">
           <AdminCardSection1 globalState={props.globalState} />
-          <ChartSection1 />
+          {/* <ChartSection1 />
           <TableSection />
-          <ChartSection2 />
+          <ChartSection2 /> */}
         </MDBCol>
         <MDBCol className="col-3">
       <InsightsSection/>

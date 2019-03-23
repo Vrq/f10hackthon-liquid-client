@@ -63,6 +63,11 @@ class TrxPage extends Component {
   };
 
   toggle = () => {
+    this.props.changeGlobalState({
+      balances: [13000],
+      revenues: [300, 3500],
+      costs: [300, 1000]
+    })
     this.setState({
       modal: !this.state.modal
     });
