@@ -5,13 +5,18 @@ import AddAccountModal from './AddAccountModal'
 
 class InsightsSection extends Component {
     state = {
-        modal: false
+        modal: false,
+        showInitialInsight: false
     };
 
     toggle = () => {
         this.setState({
             modal: !this.state.modal
         });
+    }
+
+    componentDidMount = () => {
+        let myVar = setTimeout(()=> this.setState({showInitialInsight: true}), 3000)
     }
 
     closeModal = () => {
@@ -26,7 +31,7 @@ class InsightsSection extends Component {
                     <div className="insights-card text-center ">
                         <h5>Live Insights</h5>
                         <hr />
-                        <SingleInsight insightContent="Add bank account" onClickHandle={this.toggle} />
+                        {this.state.showInitialInsight && <SingleInsight insightContent="Add bank account" onClickHandle={this.toggle} />}
                         {/* <SingleInsight insightContent={"Connect Google Analytics"} linkedPage={"/"} /> */}
                     </div>
                 </MDBCardBody>
