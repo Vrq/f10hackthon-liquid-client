@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardText, MDBIcon } from 'mdbreact';
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardText, MDBIcon, MDBAnimation, MDBBtn } from 'mdbreact';
 import { Link } from 'react-router-dom'
 import AddAccountModal from './AddAccountModal'
 
@@ -27,7 +27,7 @@ class InsightsSection extends Component {
                         <h5>Live Insights</h5>
                         <hr />
                         <SingleInsight insightContent="Add bank account" onClickHandle={this.toggle} />
-                        <SingleInsight insightContent={"Connect Google Analytics"} linkedPage={"/"} />
+                        {/* <SingleInsight insightContent={"Connect Google Analytics"} linkedPage={"/"} /> */}
                     </div>
                 </MDBCardBody>
                 <AddAccountModal changeGlobalState={this.props.changeGlobalState} modalState={this.state.modal} closeModal={this.closeModal} />
@@ -38,11 +38,13 @@ class InsightsSection extends Component {
 
 const SingleInsight = ({ insightContent, onClickHandle }) => {
     return (
-        <div onClick={onClickHandle}>
-            <div className="pt-2" >
-                <div className="businesshq-bg-complementary py-4 px-3 text-white my-2 mx-3 rounded-lg"><div>{insightContent}</div></div>
+        <MDBAnimation type="slideInUp">
+            <div onClick={onClickHandle} >
+                <div className="pt-2" >
+                    <div className="businesshq-bg-complementary py-4 px-3 text-white my-2 mx-3 rounded-lg z-depth-1-half show-pointer"><div>{insightContent}</div></div>
+                </div>
             </div>
-        </div>
+        </MDBAnimation>
 
     )
 }

@@ -23,3 +23,7 @@
 .insights-card {
     min-height: 900px;
 }
+
+.show-pointer {
+    cursor: pointer;
+}
