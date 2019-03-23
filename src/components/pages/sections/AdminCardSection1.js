@@ -12,7 +12,7 @@ const AdminCardSection1 = (props) => {
               <Link to="/accountsPage" activeClassName="activeClass">
                 <MDBCard className="cascading-admin-card">
                   <div className="admin-up">
-                    <MDBIcon icon="money-bill-alt" className="businesshq-bg" />
+                    <MDBIcon icon="money-bill-alt" className="businesshq-bg icon-width text-center" />
                     <div className="data">
                       <p>BALANCE</p>
                       <h4>
@@ -33,8 +33,8 @@ const AdminCardSection1 = (props) => {
             <MDBCol xl="4" md="6" className="mb-r">
               <Link to="/trxPage" activeClassName="activeClass">
                 <MDBCard className="cascading-admin-card">
-                  <div className="admin-up">
-                    <MDBIcon icon="chart-line" className="businesshq-bg" />
+                  <div className="admin-up"> 
+                    <MDBIcon icon="chart-line" className="businesshq-bg icon-width text-center" />
                     <div className="data">
                       <p>REVENUE</p>
                       <h4>
@@ -56,7 +56,7 @@ const AdminCardSection1 = (props) => {
               <Link to="/trxPage" activeClassName="activeClass">
                 <MDBCard className="cascading-admin-card">
                   <div className="admin-up">
-                    <MDBIcon icon="receipt" className="businesshq-bg lighten-1" />
+                    <MDBIcon icon="receipt" className="businesshq-bg icon-width text-center lighten-1" />
                     <div className="data">
                       <p>COSTS</p>
                       <h4>

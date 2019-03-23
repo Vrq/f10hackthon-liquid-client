@@ -27,3 +27,7 @@
 .show-pointer {
     cursor: pointer;
 }
+
+.icon-width {
+    min-width: 5.5rem;
+}

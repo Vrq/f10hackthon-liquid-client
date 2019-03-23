@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      balances: [0],
+      balances: [1],
       revenues: [0],
       costs: [0]
     };
