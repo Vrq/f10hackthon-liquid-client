@@ -55,8 +55,8 @@ class TransactionsChart extends Component {
             <MDBRow className="mb-1">
                 <MDBCol md="12" lg="12" className="mb-1">
                     <MDBCard className="mb-1">
-                    <MDBCardHeader>Transactions
-                      <button type="button" class="btn btn-primary">Add Account</button>
+                    <MDBCardHeader>
+                    Transaction Volumes
 
                     </MDBCardHeader>
                     <MDBCardBody>
