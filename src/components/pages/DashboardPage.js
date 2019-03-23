@@ -14,15 +14,15 @@ const DashboardPage = (props) => {
   return (
     <React.Fragment>
       <MDBRow>
-        <MDBCol className="col-9">
+        <MDBCol className="col-12">
           <AdminCardSection1 globalState={props.globalState} />
           {/* <ChartSection1 />
           <TableSection />
           <ChartSection2 /> */}
         </MDBCol>
-        <MDBCol className="col-3">
+        {/* <MDBCol className="col-3">
       <InsightsSection  changeGlobalState={props.changeGlobalState}/>
-        </MDBCol>
+        </MDBCol> */}
       </MDBRow>
 
     </React.Fragment>

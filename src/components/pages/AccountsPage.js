@@ -26,7 +26,7 @@ const AccountPage = (props) => {
   return (
     <React.Fragment>
       <MDBRow>
-        <MDBCol className="col-9">
+        <MDBCol className="col-12">
         <MDBRow>
         <MDBCol>
         <MDBCard className="cascading-admin-card">
@@ -62,9 +62,9 @@ const AccountPage = (props) => {
 
 
         </MDBCol>
-        <MDBCol className="col-3">
+        {/* <MDBCol className="col-3">
           <InsightsSection changeGlobalState={props.changeGlobalState} />
-        </MDBCol>
+        </MDBCol> */}
       </MDBRow>
 
 

@@ -84,14 +84,14 @@ class TrxPage extends Component {
     return (
       <div>
         <MDBRow>
-          <MDBCol md="9">
+          <MDBCol md="12">
             <TransactionsChart />
             <MDBBtn color="info" onClick={this.toggle}>Add Account</MDBBtn>
             <TrxTable />
           </MDBCol>
-          <MDBCol md="3">
+          {/* <MDBCol md="3">
             <InsightsSection changeGlobalState={this.props.changeGlobalState} />
-          </MDBCol>
+          </MDBCol> */}
         </MDBRow>
         <AddAccountModal changeGlobalState={this.props.changeGlobalState} modalState={this.state.modal} closeModal={this.closeModal} />
       </div>

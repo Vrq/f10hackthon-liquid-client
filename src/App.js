@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardText, MDBIcon } from 'mdbreact';
 import Routes from '../src/components/Routes';
 import TopNavigation from './components/topNavigation';
 import SideNavigation from './components/sideNavigation';
 import Footer from './components/Footer';
 import './index.css';
 import './App.css';
+import InsightsSection from './components/pages/sections/InsightsSection'
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +31,17 @@ class App extends Component {
           <TopNavigation />
           <SideNavigation />
           <main id="content" className="py-5 px-3">
-            <Routes globalState={this.state} changeGlobalState={this.changeGlobalState} />
+          <MDBRow>
+        <MDBCol className="col-9">
+        <Routes globalState={this.state} changeGlobalState={this.changeGlobalState} />
+          {/* <ChartSection1 />
+          <TableSection />
+          <ChartSection2 /> */}
+        </MDBCol>
+        <MDBCol className="col-3">
+      <InsightsSection  changeGlobalState={this.changeGlobalState}/>
+        </MDBCol>
+      </MDBRow>
           </main>
           <Footer />
         </div>
