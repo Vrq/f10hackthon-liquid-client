@@ -1,3 +1,12 @@
 .businesshq-bg { 
  background-color: rgba(16, 39, 123, 0.918);
 }
+
+.activeClass > .list-group-item {
+    background-color: rgba(16, 39, 123, 0.842)!important;
+    border-color: rgba(16, 39, 123, 0.842)!important;
+}
+
+.navbar-brand {
+    color: rgba(16, 39, 123, 0.842)!important;
+}

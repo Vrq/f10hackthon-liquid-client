@@ -57,7 +57,7 @@ const AdminCardSection1 = () => {
               </div>
               <MDBCardBody>
                 <div className="progress">
-                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" className="progress-bar bg-danger darken-2" role="progressbar"
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" className="progress-bar danger-color-dark" role="progressbar"
                     style={{width: '28%'}}></div>
                 </div>
                 <MDBCardText>Up from last week (28%)</MDBCardText>
