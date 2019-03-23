@@ -63,7 +63,7 @@ const AccountPage = (props) => {
 
         </MDBCol>
         <MDBCol className="col-3">
-          <InsightsSection />
+          <InsightsSection changeGlobalState={props.changeGlobalState} />
         </MDBCol>
       </MDBRow>
 

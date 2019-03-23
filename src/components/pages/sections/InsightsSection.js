@@ -16,7 +16,7 @@ class InsightsSection extends Component {
     }
 
     componentDidMount = () => {
-        let myVar = setTimeout(()=> this.setState({showInitialInsight: true}), 3000)
+        let myVar = setTimeout(()=> this.setState({showInitialInsight: true}), 2000)
     }
 
     closeModal = () => {
