@@ -10,3 +10,12 @@
 .navbar-brand {
     color: rgba(16, 39, 123, 0.842)!important;
 }
+
+.businesshq-bg-light {
+    background-color: rgba(16, 39, 123, 0.801);
+
+}
+
+.insights-card {
+    min-height: 900px;
+}

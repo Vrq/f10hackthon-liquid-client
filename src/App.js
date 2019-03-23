@@ -13,7 +13,7 @@ class App extends Component {
         <div className="flexible-content">
           <TopNavigation />
           <SideNavigation />
-          <main id="content" className="p-5">
+          <main id="content" className="py-5 px-3">
             <Routes />
           </main>
           <Footer />
