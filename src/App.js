@@ -12,9 +12,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      balances: [1],
+      balances: [0],
       revenues: [0],
-      costs: [0]
+      costs: [0],
+      banks: [],
+      accountShares: [100]
     };
   }
 
@@ -22,7 +24,9 @@ class App extends Component {
     this.setState(prevState => ({
       balances: newState.balances ? newState.balances : prevState.balances,
       revenues: newState.revenues ? newState.revenues : prevState.revenues,
-      costs: newState.costs ? newState.costs : prevState.costs
+      costs: newState.costs ? newState.costs : prevState.costs,
+      banks: newState.banks ? newState.banks : prevState.banks,
+      accountShares: newState.accountShares ? newState.accountShares : prevState.accountShares
     }))
 }
   render() {
