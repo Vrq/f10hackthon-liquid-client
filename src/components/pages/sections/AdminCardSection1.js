@@ -7,17 +7,17 @@ const AdminCardSection1 = () => {
         <MDBCol xl="3" md="6" className="mb-r">
           <MDBCard className="cascading-admin-card">
               <div className="admin-up">
-              <MDBIcon icon="money-bill-alt" className="primary-color"/>
+              <MDBIcon icon="money-bill-alt" className="businesshq-bg"/>
                 <div className="data">
                   <p>BALANCE</p>
                   <h4>
-                    <strong>242320 CHF</strong>
+                    <strong>242,320 CHF</strong>
                   </h4>
                 </div>
               </div>
               <MDBCardBody>
                 <div className="progress">
-                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="14" className="progress-bar bg-success" role="progressbar"
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="14" className="progress-bar success-color-dark" role="progressbar"
                     style={{width: '14%'}}></div>
                 </div>
                 <MDBCardText>Up from last week (14%)</MDBCardText>
@@ -27,17 +27,17 @@ const AdminCardSection1 = () => {
         <MDBCol xl="3" md="6" className="mb-r">
           <MDBCard className="cascading-admin-card">
               <div className="admin-up">
-              <MDBIcon icon="chart-line" className="warning-color"/>
+              <MDBIcon icon="chart-line" className="businesshq-bg"/>
                 <div className="data">
                   <p>REVENUE</p>
                   <h4>
-                    <strong>18000 CHF</strong>
+                    <strong>18,000 CHF</strong>
                   </h4>
                 </div>
               </div>
               <MDBCardBody>
                 <div className="progress">
-                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="23" className="progress-bar bg-success" role="progressbar"
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="23" className="progress-bar success-color-dark" role="progressbar"
                     style={{width: '23%'}}></div>
                 </div>
                 <MDBCardText>Up from last week (23%)</MDBCardText>
@@ -47,11 +47,11 @@ const AdminCardSection1 = () => {
         <MDBCol xl="3" md="6" className="mb-r">
           <MDBCard className="cascading-admin-card">
               <div className="admin-up">
-              <MDBIcon icon="receipt" className="light-blue lighten-1"/>
+              <MDBIcon icon="receipt" className="businesshq-bg lighten-1"/>
                 <div className="data">
                   <p>COSTS</p>
                   <h4>
-                    <strong>9700</strong>
+                    <strong>9,700</strong>
                   </h4>
                 </div>
               </div>
@@ -67,17 +67,17 @@ const AdminCardSection1 = () => {
         <MDBCol xl="3" md="6" className="mb-r">
           <MDBCard className="cascading-admin-card">
               <div className="admin-up">
-              <MDBIcon icon="user" className="red accent-2"/>
+              <MDBIcon icon="user" className="businesshq-bg"/>
                 <div className="data">
                   <p>WEBSITE VISITORS</p>
                   <h4>
-                    <strong>2000</strong>
+                    <strong>2,324</strong>
                   </h4>
                 </div>
               </div>
               <MDBCardBody>
                 <div className="progress">
-                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" className="progress-bar bg-success" role="progressbar"
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" className="progress-bar success-color-dark" role="progressbar"
                     style={{width: '25%'}}></div>
                 </div>
                 <MDBCardText>Better than last week (25%)</MDBCardText>

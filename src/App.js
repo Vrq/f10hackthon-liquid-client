@@ -4,6 +4,7 @@ import TopNavigation from './components/topNavigation';
 import SideNavigation from './components/sideNavigation';
 import Footer from './components/Footer';
 import './index.css';
+import './App.css';
 
 class App extends Component {
   
