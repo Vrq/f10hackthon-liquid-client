@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBIcon, MDBRow, MDBCol, MDBCardText } from 'mdbreact';
 
-const AdminCardSection1 = () => {
+const AdminCardSection1 = (props) => {
   return (
     <div>
       <MDBRow className="mb-4">
@@ -12,7 +12,7 @@ const AdminCardSection1 = () => {
               <div className="data">
                 <p>BALANCE</p>
                 <h4>
-                  <strong>242,320 CHF</strong>
+                  <strong>{props.globalState.balances.reduce((prev, curr) => prev + curr) +" CHF"} </strong>
                 </h4>
               </div>
             </div>

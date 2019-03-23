@@ -10,12 +10,12 @@ import MapSection from './sections/MapSection';
 import ModalSection from './sections/ModalSection';
 import InsightsSection from './sections/InsightsSection';
 
-const DashboardPage = () => {
+const DashboardPage = (props) => {
   return (
     <React.Fragment>
       <MDBRow>
         <MDBCol className="col-9">
-          <AdminCardSection1 />
+          <AdminCardSection1 globalState={props.globalState} />
           <ChartSection1 />
           <TableSection />
           <ChartSection2 />
