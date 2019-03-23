@@ -1,7 +1,7 @@
 import React from 'react'
 import { MDBRow, MDBCol, MDBView, MDBCard, MDBCardBody, MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact';
 import TransactionsChart from './sections/TransactionsChart';
-import UBS_logo from '/home/tobias/Dropbox/F10_Hackathon/Frontend/f10hackthon-liquid-client/src/assets/UBS_logo_logotype_emblem.png'
+import UBS_logo from '../../assets/UBS_logo_logotype_emblem.png'
 const TablesPage =  () => {
   return (
     <>
