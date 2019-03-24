@@ -6,6 +6,8 @@ import CS_logo from '../../../assets/CS_logo.png'
 import UBS_logo from '../../../assets/ubs-logo.png'
 import PF_logo from '../../../assets/PF_logo.png'
 import RV_logo from '../../../assets/Logo_Revolut.png'
+import RF_logo from '../../../assets/raiffeisen-logo-pc.png'
+import BK_logo from '../../../assets/bkb_logo.jpg'
 
 class AddAccountModal extends Component {
     constructor(props) {
@@ -33,7 +35,7 @@ class AddAccountModal extends Component {
                 accountShares: [35, 75]
             })
         }
-       
+
         this.props.closeModal()
         this.setState({
             selectedAccount: 0
@@ -73,7 +75,7 @@ class AddAccountModal extends Component {
                                 <MDBBtn color="white" className={this.isHighlightedClass(3)}  onClick={() => this.selectAccount(3)}><img height={30} src={RV_logo} /></MDBBtn>
                             </MDBCol>
                             <MDBCol md="6">
-                                <MDBBtn color="white" className={this.isHighlightedClass(4)}  onClick={() => this.selectAccount(4)}><img height={25} src={CS_logo} /></MDBBtn>
+                                <MDBBtn color="white" className={this.isHighlightedClass(4)}  onClick={() => this.selectAccount(4)}><img height={25} src={RF_logo} /></MDBBtn>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow>
@@ -81,7 +83,7 @@ class AddAccountModal extends Component {
                                 <MDBBtn color="white" className={this.isHighlightedClass(5)}  onClick={() => this.selectAccount(5)}><img height={30} src={PF_logo} /></MDBBtn>
                             </MDBCol>
                             <MDBCol md="6">
-                                <MDBBtn color="white" className={this.isHighlightedClass(6)}  onClick={() => this.selectAccount(6)}><img height={25} src={CS_logo} /></MDBBtn>
+                                <MDBBtn color="white" className={this.isHighlightedClass(6)}  onClick={() => this.selectAccount(6)}><img height={25} src={BK_logo} /></MDBBtn>
                             </MDBCol>
                         </MDBRow>
                     </MDBModalBody>
