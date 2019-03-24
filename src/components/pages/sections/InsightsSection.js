@@ -11,16 +11,27 @@ class InsightsSection extends Component {
     };
 
     toggle = (accountNumber) => {
-        this.setState({
-            accountNumber: accountNumber,
-            modal: !this.state.modal,
-            showInitialInsight: false
-        });
-        setTimeout(()=> this.setState({showSecondInsight: true}), 2000)
+        if(accountNumber === 1) {
+            this.setState({
+                accountNumber: accountNumber,
+                modal: !this.state.modal,
+                showInitialInsight: false
+            });
+            setTimeout(()=> this.setState({showSecondInsight: true}), 5000)
+        }
+        if(accountNumber === 2) {
+            this.setState({
+                accountNumber: accountNumber,
+                modal: !this.state.modal,
+                showSecondInsight: false
+            });
+            setTimeout(()=> this.setState({showThirdInsight: true}), 7000)
+        }
+        
     }
 
     componentDidMount = () => {
-        let myVar = setTimeout(()=> this.setState({showInitialInsight: true}), 1000)
+        let myVar = setTimeout(()=> this.setState({showInitialInsight: true}), 2000)
     }
 
     closeModal = () => {

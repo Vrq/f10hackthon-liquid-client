@@ -30,7 +30,7 @@ class AddAccountModal extends Component {
                 revenues: [300, 3500, 2900, 11000],
                 costs: [300, 1000, 3000, 7000],
                 banks: ["UBS", "Credit Suisse"],
-                accountShares: [35, 75]
+                accountShares: [35, 65]
             })
         }
        
