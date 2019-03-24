@@ -16,14 +16,28 @@ class AddAccountModal extends Component {
       }
 
     toggle = () => {
-        this.props.changeGlobalState({
-            balances: [13000],
-            revenues: [300, 3500],
-            costs: [300, 1000],
-            banks: ["UBS"],
-            accountShares: [100]
-        })
+        if(this.props.accountNumber !== 2) {
+            this.props.changeGlobalState({
+                balances: [13000],
+                revenues: [300, 3500],
+                costs: [300, 1000],
+                banks: ["UBS"],
+                accountShares: [100]
+            })
+        } else {
+            this.props.changeGlobalState({
+                balances: [13000, 21000],
+                revenues: [300, 3500, 2900, 11000],
+                costs: [300, 1000, 3000, 7000],
+                banks: ["UBS", "Credit Suisse"],
+                accountShares: [35, 75]
+            })
+        }
+       
         this.props.closeModal()
+        this.setState({
+            selectedAccount: 0
+        })
     }
 
     selectAccount = accountNumber => {

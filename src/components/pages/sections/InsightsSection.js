@@ -6,13 +6,17 @@ import AddAccountModal from './AddAccountModal'
 class InsightsSection extends Component {
     state = {
         modal: false,
-        showInitialInsight: false
+        showInitialInsight: false,
+        showSecondInsight: false
     };
 
-    toggle = () => {
+    toggle = (accountNumber) => {
         this.setState({
-            modal: !this.state.modal
+            accountNumber: accountNumber,
+            modal: !this.state.modal,
+            showInitialInsight: false
         });
+        setTimeout(()=> this.setState({showSecondInsight: true}), 2000)
     }
 
     componentDidMount = () => {
@@ -31,11 +35,13 @@ class InsightsSection extends Component {
                     <div className="insights-card text-center ">
                         <h5>Live Insights</h5>
                         <hr />
-                        {this.state.showInitialInsight && <SingleInsight insightContent="Add bank account" onClickHandle={this.toggle} />}
-                        {/* <SingleInsight insightContent={"Connect Google Analytics"} linkedPage={"/"} /> */}
+                        {this.state.showInitialInsight && <SingleInsight insightContent="Add bank account" onClickHandle={() => this.toggle(1)} />}
+                        {this.state.showSecondInsight && <SingleInsight insightContent="Do you have another account?" onClickHandle={() => this.toggle(2)}/>}
+                        {this.state.showThirdInsight && <SingleInsight insightContent={"Your cashflows indicate that your balance will be >300.000 CHF by the end of 2019"} linkedPage={"/"} />}
+                        {this.state.showFourthInsight && <SingleInsight insightContent={"Connect Google Analytics"} linkedPage={"/"} />}
                     </div>
                 </MDBCardBody>
-                <AddAccountModal changeGlobalState={this.props.changeGlobalState} modalState={this.state.modal} closeModal={this.closeModal} />
+                <AddAccountModal changeGlobalState={this.props.changeGlobalState} modalState={this.state.modal} closeModal={this.closeModal} accountNumber={this.state.accountNumber} />
             </MDBCard>
         );
     }
