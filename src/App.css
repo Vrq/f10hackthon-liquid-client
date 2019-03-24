@@ -1,22 +1,22 @@
 .businesshq-bg { 
- background-color: rgba(16, 39, 123, 0.918);
+ background-color: rgba(16, 110, 198, 0.932);
 }
 
 .businesshq-bg-complementary {
-    background-color: #bd6b1ee0;
+    background-color: #f78234;
 }
 
 .activeClass > .list-group-item {
-    background-color: rgba(16, 39, 123, 0.842)!important;
-    border-color: rgba(16, 39, 123, 0.842)!important;
+    background-color: rgba(16, 110, 198, 0.932)!important;
+    border-color: rgba(16, 110, 198, 0.932)!important;
 }
 
 .navbar-brand {
-    color: rgba(16, 39, 123, 0.842)!important;
+    color: rgba(16, 110, 198, 0.932)!important;
 }
 
 .businesshq-bg-light {
-    background-color: rgba(16, 39, 123, 0.801);
+    background-color: rgba(16, 110, 198, 0.822);
 
 }
 
@@ -33,5 +33,5 @@
 }
 
 .selected-account {
-    background-color: rgba(16, 39, 123, 0.171)!important;
+    background-color: rgba(16, 110, 198, 0.199)!important;
 }

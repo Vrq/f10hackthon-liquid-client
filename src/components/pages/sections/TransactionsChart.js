@@ -26,7 +26,7 @@ class TransactionsChart extends Component {
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
                 pointHitRadius: 10,
-                data: [65, 59, 80, 81, 56, 55, 40]
+                data: [6500, 5999, 8000, 4600, 12000, 5500, 9000]
               }
             ]
         };
