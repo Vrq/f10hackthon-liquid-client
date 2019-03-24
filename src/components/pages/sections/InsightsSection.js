@@ -26,7 +26,7 @@ class InsightsSection extends Component {
                 showSecondInsight: false
             });
             setTimeout(()=> this.setState({showThirdInsight: true}), 5000)
-            setTimeout(()=> this.setState({showFourthInsight: true}), 9000)
+            setTimeout(()=> this.setState({showFourthInsight: true}), 8000)
         }
         
     }
