@@ -30,24 +30,45 @@ const TrxTable = () => {
           <MDBTableBody>
             <tr>
               <td>1</td>
-              <td>23.03.2019</td>
+              <td>14.02.2019</td>
               <td><img height={30} src={UBS_logo} /></td>
               <td>Otto</td>
-              <td>@mdo</td>
+              <td>4500</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>23.03.2019</td>
+              <td>20.03.2019</td>
               <td><img height={30} src={UBS_logo} /></td>
               <td>Thornton</td>
-              <td>@fat</td>
+              <td>6000</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>23.03.2019</td>
+              <td>20.03.2019</td>
               <td><img height={30} src={UBS_logo} /></td>
               <td>the Bird</td>
-              <td>@twitter</td>
+              <td>7500</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>22.03.2019</td>
+              <td><img height={30} src={UBS_logo} /></td>
+              <td>Silent song</td>
+              <td>12000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23.03.2019</td>
+              <td><img height={30} src={UBS_logo} /></td>
+              <td>Sun rises in the morning</td>
+              <td>4700</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>23.03.2019</td>
+              <td><img height={30} src={UBS_logo} /></td>
+              <td>Crazy Factory</td>
+              <td>2000</td>
             </tr>
           </MDBTableBody>
         </MDBTable>

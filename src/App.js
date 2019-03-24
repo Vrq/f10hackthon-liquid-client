@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardText, MDBIcon } from 'mdbreact';
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardText, MDBIcon, MDBCardTitle } from 'mdbreact';
 import Routes from '../src/components/Routes';
 import TopNavigation from './components/topNavigation';
 import SideNavigation from './components/sideNavigation';
@@ -16,7 +16,8 @@ class App extends Component {
       revenues: [0],
       costs: [0],
       banks: [],
-      accountShares: [100]
+      accountShares: [100],
+      showWelcomeMessage: true
     };
   }
 
@@ -26,29 +27,44 @@ class App extends Component {
       revenues: newState.revenues ? newState.revenues : prevState.revenues,
       costs: newState.costs ? newState.costs : prevState.costs,
       banks: newState.banks ? newState.banks : prevState.banks,
-      accountShares: newState.accountShares ? newState.accountShares : prevState.accountShares
+      accountShares: newState.accountShares ? newState.accountShares : prevState.accountShares,
+      showWelcomeMessage: false
     }))
-}
+  }
+
+  closeWelcomeMessage = () => {
+    this.setState({
+      showWelcomeMessage: false
+    })
+  }
   render() {
     return (
-        <div className="flexible-content">
-          <TopNavigation />
-          <SideNavigation />
-          <main id="content" className="py-5 px-3">
+      <div className="flexible-content">
+        <TopNavigation />
+        <SideNavigation />
+        <main id="content" className="py-5 px-3">
           <MDBRow>
-        <MDBCol className="col-9">
-        <Routes globalState={this.state} changeGlobalState={this.changeGlobalState} />
-          {/* <ChartSection1 />
+            <MDBCol className="col-9">
+              {this.state.showWelcomeMessage &&
+                <MDBCol onClick={this.closeWelcomeMessage}>
+                  <MDBCard className="p-5 white-text businesshq-bg">
+                    <MDBCardTitle className="text-center ">Welcome to LiquiNET</MDBCardTitle>
+                    <MDBCardBody><MDBCardText className="text-center white-text">Our intelligent insights will help you get started</MDBCardText></MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              }
+              <Routes globalState={this.state} changeGlobalState={this.changeGlobalState} />
+              {/* <ChartSection1 />
           <TableSection />
           <ChartSection2 /> */}
-        </MDBCol>
-        <MDBCol className="col-3">
-      <InsightsSection  changeGlobalState={this.changeGlobalState}/>
-        </MDBCol>
-      </MDBRow>
-          </main>
-          <Footer />
-        </div>
+            </MDBCol>
+            <MDBCol className="col-3">
+              <InsightsSection changeGlobalState={this.changeGlobalState} />
+            </MDBCol>
+          </MDBRow>
+        </main>
+        <Footer />
+      </div>
     );
   }
 }
