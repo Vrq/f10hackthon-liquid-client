@@ -45,14 +45,16 @@ class App extends Component {
         <main id="content" className="py-5 px-3">
           <MDBRow>
             <MDBCol className="col-9">
+            <div className="d-flex justify-content-center">
               {this.state.showWelcomeMessage &&
-                <MDBCol onClick={this.closeWelcomeMessage}>
+                <MDBCol className="col-6 text-center" onClick={this.closeWelcomeMessage}>
                   <MDBCard className="p-5 white-text businesshq-bg">
                     <MDBCardTitle className="text-center ">Welcome to LiquiNET</MDBCardTitle>
                     <MDBCardBody><MDBCardText className="text-center white-text">Our intelligent insights will help you get started</MDBCardText></MDBCardBody>
                   </MDBCard>
                 </MDBCol>
               }
+              </div>
               <Routes globalState={this.state} changeGlobalState={this.changeGlobalState} />
               {/* <ChartSection1 />
           <TableSection />
