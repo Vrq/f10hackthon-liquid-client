@@ -25,7 +25,8 @@ class InsightsSection extends Component {
                 modal: !this.state.modal,
                 showSecondInsight: false
             });
-            setTimeout(()=> this.setState({showThirdInsight: true}), 7000)
+            setTimeout(()=> this.setState({showThirdInsight: true}), 5000)
+            setTimeout(()=> this.setState({showFourthInsight: true}), 9000)
         }
         
     }
