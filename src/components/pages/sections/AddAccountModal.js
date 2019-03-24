@@ -28,7 +28,7 @@ class AddAccountModal extends Component {
             })
         } else {
             this.props.changeGlobalState({
-                balances: [13000, 21000],
+                balances: [13000, 24000],
                 revenues: [300, 3500, 2900, 11000],
                 costs: [300, 1000, 3000, 7000],
                 banks: ["UBS", "Credit Suisse"],
